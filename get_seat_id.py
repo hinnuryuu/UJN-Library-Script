@@ -15,6 +15,9 @@ if settings_exist:
         except json.JSONDecodeError:
             print("配置文件出错，请打开 settings_file_generator.py 重新生成一份配置模板")
             exit(1)
+else:
+    print("配置文件出错，请打开 settings_file_generator.py 重新生成一份配置模板")
+    exit(1)
 
 username = settings_information['data'][0]['username']
 password = settings_information['data'][0]['password']
