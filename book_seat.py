@@ -58,10 +58,10 @@ def execute_settings(username, password, seat_id, start_time, end_time, date, ta
                                                     result['data']['location']))
         if i != task_length - 1:
             print("按任意键继续执行配置文件中的下一份预约...")
-            msvcrt.getwch()
+            #msvcrt.getwch()
         else:
             print("按任意键结束预约程序...")
-            msvcrt.getwch()
+            #msvcrt.getwch()
 
 
 if __name__ == '__main__':
