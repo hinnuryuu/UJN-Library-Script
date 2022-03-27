@@ -6,7 +6,7 @@
 
 ---
 
-https://github.com/hinnuryuu/UJN-Library-Script/issues/1使用方法
+[使用方法](https://github.com/hinnuryuu/UJN-Library-Script/issues/1)
 
 ---
 
