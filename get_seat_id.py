@@ -43,14 +43,17 @@ else:
         exit(1)
     else:
         if 1 <= choice < room_order:
-            pass
+            room_id = library_information['data']['rooms'][choice - 1][0]
+            seat_number_limitation = limit_seat_number(room_id)
+            seat_num = input(
+                "输入要预定的座位号(当前阅览室的座位号接受范围为 {}~{})："
+                .format(seat_number_limitation[0], seat_number_limitation[1])
+            )
+            seat_id = p.getSeatIDbyNum(str(room_id), str(seat_num))
+            if seat_id is not None:
+                print("获取成功！请记下您的座位id：%d" % seat_id)
+            else:
+                print("获取失败，因为这是不存在的座位号")
         else:
             print("输入错误，程序中止")
             exit(1)
-room_id = library_information['data']['rooms'][choice - 1][0]
-seat_num = input("输入要预定的座位号：")
-seat_id = p.getSeatIDbyNum(room_id, seat_num)
-if seat_id is not None:
-    print("获取成功！请记下您的座位id：%d" % seat_id)
-else:
-    print("获取失败，因为这是不存在的座位号")
