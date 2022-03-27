@@ -4,8 +4,6 @@
 
 感谢学长提供的[API](https://github.com/Hephyr/UJN-Lib-Seat-API)
 
----
-
 [使用方法](https://github.com/hinnuryuu/UJN-Library-Script/issues/1)
 
 ---
