@@ -74,6 +74,7 @@ else:
                     else:
                         original_data.append("阅览室名称,校区,楼层,座位号,seat_id\n")
                     original_data.append(new_data)
+                    original_data = list(dict.fromkeys(original_data))  # 对列表去重，因为可能有重复查询的
                     f.writelines(original_data)
                 print("获取成功并已更新result.csv")
             else:
