@@ -1,4 +1,4 @@
-# UJN-Library-Script
+# UJN-Library-Script（API已经过期，现无法正常使用）
 
 之前写的预约工具的脚本式执行
 
